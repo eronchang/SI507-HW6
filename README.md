@@ -90,22 +90,20 @@ You will need a browser, like Chrome or Firefox to open it. Or, you can also use
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
 There are two:
-1.
-```js
+<br> 1.```js
 alert()
 ```
 This function can only result contents to show up in document for normal users.
-2.
-```js
+<br> 2.```js
 console.log()
 ```
 This function would result content to be shown only in console, which could be a function you would use if you only want to show contents for programmers.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
 
-You would have to comment out the
+You would have to comment out the line of
 ```js
-alert("hello")
+alert("hello") //add "//" before this line
 ```
 on line 12 and add
 ```js
@@ -137,14 +135,14 @@ The color would be white.
 
 * **Why are there a couple of gray boxes on the screen with a different colored border? How could you edit this code to make them a different color? Explain briefly. Then edit the code to make those boxes some shade of blue, of your choosing.**
 
-Ｔhe style of paragraphs have been defined with borders, background color, padding, font size and line height in between the <style> tags, within the p curly brackets(p{}). In order to change the background color of the paragraph to a different color, we can change the color code of **background-color** attribute in the p curly brackets, such as
+The style of paragraphs have been defined with borders, background color, padding, font size and line height in between the <style> tags, within the p curly brackets(p{}). In order to change the background color of the paragraph to a different color, we can change the color code of **background-color** attribute in the p curly brackets, such as
 	```js
 	background-color: #3399ff
 	```
 
 * **Edit the code so that, if you highlight `McGill University` and copy it, you see the text `O Canada` near the bottom of the page. Briefly explain why you made the edits that you did -- how did you know/figure out what to do?**
 
-I created(sort of mimicked) a new function called ```copyFunction_canada()```which first assign the element with id="Canada" to a text "O Canada". I also insert and call out this function on "McGill University" by adding ```oncopy="copyFunction_canada()"``` within the <li> tag. I figured this out by referring and mimicking what is performed to the original copyFunction() in the code and the ```oncopy="copyFunction()"``` code within the <li> tag associated with 'University of Michigan', which is intuitivetly telling me that on copy, call such function. I also noticed at the bottom of the code, there's a place to appear the text within the <div> tags, so I also added one that refers to the id that the result of "0 Canada" from ```copyFunction_canada()``` should appear.
+I created(sort of mimicked) a new function called ```copyFunction_canada()```which first assign the element with id="Canada" to a text "O Canada". I also insert and call out this function on "McGill University" by adding ```oncopy="copyFunction_canada()"``` within the "li" tag. I figured this out by referring and mimicking what is performed to the original copyFunction() in the code and the ```oncopy="copyFunction()"``` code within the "li" tag associated with 'University of Michigan', which is intuitivetly telling me that on copy, call such function. I also noticed at the bottom of the code, there's a place to appear the text within the "div" tags, so I also added one that refers to the id that the result of "0 Canada" from ```copyFunction_canada()``` should appear.
 * **In the original code, when you click the button that says `Wow`, you see a text box! Wow. Explain briefly in your own words why the following code causes that to happen:**
 
 ```js
