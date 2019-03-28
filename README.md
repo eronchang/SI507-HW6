@@ -90,13 +90,12 @@ You will need a browser, like Chrome or Firefox to open it. Or, you can also use
 * **What functions in JavaScript seem to be similar in function to the `print` function in Python? (There are two.) Why might you use one and not the other? Explain briefly.**
 
 There are two:
-<br> 1.```js
-alert()
-```
+<br> 1.```alert()```
+
 This function can only result contents to show up in document for normal users.
-<br> 2.```js
-console.log()
-```
+
+<br> 2.```console.log()```
+
 This function would result content to be shown only in console, which could be a function you would use if you only want to show contents for programmers.
 
 * **What code would have to comment out to get rid of the pop-up box when you load the page? (Related to the last question.) Do that in the code file, and then, add code so that a text box will appear that contains the current date and time! *HINT:* Look through the rest of the code first...**
